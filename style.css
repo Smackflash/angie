@@ -1,16 +1,16 @@
-/* Core Color Palette based on Psychology */
+/* Paleta de Colores Básica basada en Psicología */
 :root {
-    --color-primary-blue: #0077c2;   /* Trust, stability (Men's) */
-    --color-secondary-red: #e71d36;  /* Urgency, passion (Sex Shop) */
-    --color-accent-pink: #d64582;    /* Femininity, elegance (Women's) */
-    --color-accent-yellow: #fec534;  /* Energy, cheerfulness (Kids') */
-    --color-neutral-dark: #121212;   /* Sophistication, contrast */
-    --color-neutral-light: #f4f4f9;  /* Cleanliness, background */
+    --color-primary-blue: #0077c2;   /* Confianza, estabilidad (Hombres) */
+    --color-secondary-red: #e71d36;  /* Urgencia, pasión (Sex Shop) */
+    --color-accent-pink: #d64582;    /* Feminidad, elegancia (Mujeres) */
+    --color-accent-yellow: #fec534;  /* Energía, alegría (Niños) */
+    --color-neutral-dark: #121212;   /* Sofisticación, contraste */
+    --color-neutral-light: #f4f4f9;  /* Limpieza, fondo */
     --color-text-light: #fefefe;
     --color-text-dark: #333333;
 }
 
-/* Base Styles & Typography */
+/* Estilos Base y Tipografía */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -50,7 +50,7 @@ h1, h2, h3 {
     margin-bottom: 3rem;
 }
 
-/* Header & Navigation */
+/* Encabezado y Navegación */
 .header {
     position: fixed;
     top: 0;
@@ -89,13 +89,14 @@ h1, h2, h3 {
     color: var(--color-primary-blue);
 }
 
-/* Hero Section */
+/* Sección de Aterrizaje */
 .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* IMAGEN DE FONDO - Reemplaza 'tu-imagen-de-fondo.jpg' con una imagen de alta calidad */
     background: url('https://images.unsplash.com/photo-1549298379-d5c4146a84f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
     color: var(--color-text-light);
     position: relative;
@@ -126,7 +127,7 @@ h1, h2, h3 {
     font-style: italic;
 }
 
-/* Category Sections */
+/* Secciones de Categoría */
 .category-section {
     padding: 6rem 0;
 }
@@ -178,7 +179,7 @@ h1, h2, h3 {
 }
 
 
-/* News & Offers Section */
+/* Sección de Noticias y Ofertas */
 .news-offers {
     padding: 6rem 0;
     background-color: var(--color-primary-blue);
@@ -226,7 +227,7 @@ h1, h2, h3 {
     color: #ccc;
 }
 
-/* Footer */
+/* Pie de Página */
 .footer {
     text-align: center;
     padding: 2rem;
@@ -235,7 +236,7 @@ h1, h2, h3 {
     font-size: 0.9rem;
 }
 
-/* Mobile Responsiveness */
+/* Responsividad Móvil */
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
