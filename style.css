@@ -236,33 +236,111 @@ h1, h2, h3 {
     font-size: 0.9rem;
 }
 
-/* Responsividad Móvil */
+/* --------------------------------------------------- */
+/* MEJORAS DE RESPONSIVIDAD MÓVIL */
+/* --------------------------------------------------- */
+
+/* Media Query para pantallas pequeñas (ej. teléfonos) */
 @media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 1rem; /* Reduce el padding del encabezado */
+    }
+
     .nav {
-        flex-direction: column;
-        padding: 1rem;
+        flex-direction: column; /* Apila los elementos de navegación */
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem; /* Espacio debajo del logo */
     }
 
     .nav-links {
-        margin-top: 1rem;
-        gap: 1rem;
-        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        gap: 0.8rem; /* Reduce el espacio entre los enlaces */
+        flex-wrap: wrap; /* Permite que los enlaces se envuelvan si hay muchos */
         justify-content: center;
     }
+
+    .nav-link {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente de los enlaces */
+        padding: 0.3rem 0.5rem; /* Añade un poco de padding para facilitar el toque */
+    }
     
+    .hero {
+        height: 80vh; /* Reduce la altura de la sección principal en móviles */
+        padding: 0 1rem; /* Añade padding horizontal */
+    }
+
     .hero-content h2 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Tamaño de fuente más pequeño para el título principal */
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 1rem; /* Tamaño de fuente más pequeño para el subtítulo */
+        padding: 0 1rem; /* Añade padding para que el texto no toque los bordes */
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 2rem; /* Tamaño de fuente más pequeño para los títulos de sección */
+        margin-bottom: 2rem; /* Reduce el margen inferior */
+    }
+
+    .category-section {
+        padding: 4rem 0; /* Reduce el padding de las secciones de categoría */
     }
 
     .product-grid, .news-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una sola columna para productos y noticias */
+        gap: 1.5rem; /* Reduce el espacio entre las tarjetas */
+    }
+
+    .product-card, .news-card {
+        margin: 0 1rem; /* Añade un margen lateral para que no se peguen a los bordes */
+    }
+
+    .product-img {
+        height: 300px; /* Reduce la altura de las imágenes de producto */
+    }
+
+    .news-img {
+        height: 200px; /* Reduce la altura de las imágenes de noticias */
+    }
+
+    .news-content {
+        padding: 1rem; /* Reduce el padding del contenido de las noticias */
+    }
+
+    .news-title {
+        font-size: 1.3rem; /* Ajusta el tamaño del título de la noticia */
+    }
+
+    .news-text {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto de la noticia */
+    }
+
+    .footer {
+        padding: 1.5rem; /* Reduce el padding del pie de página */
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente del pie de página */
+    }
+}
+
+/* Media Query para pantallas aún más pequeñas (ej. iPhone SE, etc.) */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .product-img {
+        height: 250px; /* Más reducción para imágenes en pantallas muy pequeñas */
     }
 }
